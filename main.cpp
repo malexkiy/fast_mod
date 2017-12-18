@@ -20,8 +20,6 @@ uint32_t div10mag(uint32_t num, uint32_t &r)
 	uint32_t q;
 
 	q = (0x66666667ULL * num) >> 34;
-	q += (num >> 31);
-
 
 	r = num - q * 10;
 
